@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #101820;
+    color: white;
+}
+h1{
+    color: #FEE715;
+    margin: 0;
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    left: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+span{
+    color: white;
+}
+.a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    flex-direction: row;
+}
+.a2{
+    text-decoration: underline;
+    color: blue;
+    padding: 8px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.a:hover, .a:active{
+    background-color: #FEE715;
+}
+.a2:hover, .a2:active{
+    background-color: #FEE715;
+}
+.a1{
+    color: #FEE715;
+    padding: 8px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.a1:hover, .a1:active{
+    background-color: #FEE715;
+}
+
+.navjuu{
+    display: flex;
+    justify-content: flex-end;
+}
+.header{
+    background-color: #101820;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding: 10px;
+}
+.aside{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 40px;
+}
+.mkl{
+    padding: 0;
+    margin-right: 80px;
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+}
+.mklimg{
+    padding-left: auto;
+}
+.img2{
+    background-color: #FEE715;
+    padding: 10px;
+    border-radius: 50%;
+}
+.img2:hover, .img2:active{
+    background-color: #101820;
+}
+.img2:visited{
+    background-color: red;
+}
+.section{
+    padding-left: auto;
+    margin-bottom: 10px;
+}
+h2, h3{
+    color: #FEE715;
+}
+.img3{
+    padding: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 40px;
+}
+.mid{
+    padding-top: auto;
+    margin-top: auto;
+    height: auto;
+}
+.midp{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.midt{
+    background-color: grey;
+}
+footer{
+    background-color: #333;
+    line-height: 0.8;
+}
+article{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+ul, li{
+    list-style: none;
+    padding: 4px;
+}
+.ngtbar{
+    padding-right: 40px;
+}
+.contd{
+    padding-left: 20px;
+    align-items: center;
+}
+.proj{
+    margin-left: 40px;
+    text-align: center;
+}
+.mg:hover, .mg:active{
+    background-color: #FEE715;
+}
+.read{
+    background-color: black;
+    text-align: center;
+}
+
+
+.sect{
+    padding-left: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*contact css stylesheet*/
+
+
+.container{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.cnt{
+    padding-right: 20px;
+}
+input{
+    background-color: #101820;
+    width: 300px;
+    padding: 12px;
+    margin: 2px;
+    border: 1px solid #fee715;
+    border-radius: 4px;
+}
+textarea{
+    background-color: #101820;
+    color: #FEE715;
+    width: 400px;
+    height: 80px;
+    padding: 12px;
+    margin: 2px;
+    border: 1px solid #fee715;
+    border-radius: 4px;
+}
+input:hover, input:active{
+    background-color: #fee715;
+}
+textarea:hover, textarea:active{
+    background-color: #fee715;
+}
+/*for layout screen less than 600px*/
+@media screen {
+    input, textarea, .ul, .lb, .rb{
+        width: auto;
+        float: none;
+    }
+    
+}
+
+/*phone css stylesheet combinened with contact*/
+
+
+.li{
+    font-family: "roboto", sans-serif;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.ul{
+    display: inline;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
+.ul, .li{
+    list-style: none;
+    margin: 0.5px;
+}
+.ul .li .a .fa-brands{
+    font-size: 10px;
+    color: #262626;
+    transition: 0.5s;
+    padding-right: 14px;    
+}
+.ul .li .a span{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+.ul .li .a{
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 60px;
+    height: 35px;
+    background: #fee715;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgb(0,0,0,0.5);
+}
+.ul .li .a::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 38px;
+    width: 20px;
+    background-color: #fee715;
+    transform: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.ul .li .a::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #fee715;
+    transform: o.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+.ul .li .a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgb(0,0,0,0.5);
+}
+.ul .li:hover:nth-child(1) .a{
+    background: #e4405f;
+}
+.ul .li:hover:nth-child(1) .a::before{
+    background: #d81c3f;
+}
+.ul .li:hover:nth-child(1) .a::after{
+    background: #e46880;
+}
+.ul .li:hover:nth-child(2) .a{
+    background: #e4405f;
+}
+.ul .li:hover:nth-child(2) .a::before{
+    background: #d81c3f;
+}
+.ul .li:hover:nth-child(2) .a::after{
+    background: #e46880;
+}
+.ul .li:hover:nth-child(3) .a{
+    background: #e4405f;
+}
+.ul .li:hover:nth-child(3) .a::before{
+    background: #d81c3f;
+}
+.ul .li:hover:nth-child(3) .a::after{
+    background: #e46880;
+}
+.ul .li:hover:nth-child(4) .a{
+    background: #e4405f;
+}
+.ul .li:hover:nth-child(4) .a::before{
+    background: #d81c3f;
+}
+.ul .li:hover:nth-child(4) .a::after{
+    background: #e46880;
+}
+
+
+/*About page stylesheet*/
+.about{
+    text-align: center;
+    padding: 10px;
+    margin: 8px;
+}
+.submito{
+    width: auto;
+    height: auto;
+    background-color: #101820;
+    color: #FEE715;
+}
+
+/*project page stylesheet*/
+.dvd{
+    display: flex;
+    justify-content: center;
+}
+.div{
+    background-color: #101820;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 25px solid #FEE715;
+    border-top: 20px solid blueviolet;
+    animation: ani 2.5s linear infinite;
+}
+@keyframes ani{
+    to{
+        transform: rotate(360deg)
+    }
+}
