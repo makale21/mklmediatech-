@@ -193,10 +193,10 @@ textarea:hover, textarea:active{
     background-color: #fee715;
 }
 /*for layout screen less than 600px*/
-@media (max-width: 600px){
+@media (max-width: 768px){
     body,a,img,section,article,div, .a, .a1,
     .a2,.about,.ul, .submito, .section,.sect,
-    .read,.proj,.img2,.img3{
+    .read,.proj,.img2,.img3, .aside{
         float: none;
         align-items: center;
         text-align: center;
@@ -371,4 +371,5 @@ textarea:hover, textarea:active{
     transform: scale(1.3);
     background-color: #FEE715;
 }
+
 
