@@ -54,7 +54,6 @@ span{
 .header{
     background-color: #101820;
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
     display: flex;
     justify-content: center;
@@ -69,7 +68,8 @@ span{
     margin-top: 40px;
 }
 .mkl{
-    padding: 0;
+    padding: auto;
+    margin: auto;
     margin-right: 80px;
     width: 200px;
     height: 300px;
@@ -90,6 +90,7 @@ span{
     background-color: red;
 }
 .section{
+    max-width: 600px;
     padding-left: auto;
     margin-bottom: 10px;
 }
@@ -192,10 +193,34 @@ textarea:hover, textarea:active{
     background-color: #fee715;
 }
 /*for layout screen less than 600px*/
-@media screen {
-    input, textarea, .ul, .lb, .rb{
-        width: auto;
-        float: none;
+@media (max-width: 600px){
+    body,a,img,section,article,div, .a, .a1,
+    .a2,.about,.ul, .submito, .section,.sect,
+    .read,.proj,.img2,.img3{
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        margin-top: auto;
+        padding-top: auto;
+        margin-left: auto;
+        padding-left: auto;
+        margin-bottom: auto;
+        padding-bottom: auto;
+        margin-right: auto;
+        padding-right: auto;
+    }
+    .header{
+        margin-bottom: 25px;
+    }
+    .mkl,.mklimg{
+        margin-top: 15px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .aside{
+        margin: 10px;
     }
     
 }
@@ -340,4 +365,16 @@ textarea:hover, textarea:active{
     to{
         transform: rotate(360deg)
     }
+}
+.phone, .gmail{
+    width: 60px;
+    border-radius: 6px;
+}
+.phone:hover{
+    transform: scale(1.3);
+    background-color: #fee715;
+}
+.gmail:hover{
+    transform: scale(1.3);
+    background-color: #FEE715;
 }
