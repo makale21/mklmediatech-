@@ -197,19 +197,12 @@ textarea:hover, textarea:active{
     body,a,img,section,article,div, .a, .a1,
     .a2,.about,.ul, .submito, .section,.sect,
     .read,.proj,.img2,.img3{
+        float: none;
         align-items: center;
         text-align: center;
-        flex-direction: column;
-        margin: auto;
-        padding: auto;
-        margin-top: auto;
-        padding-top: auto;
-        margin-left: auto;
-        padding-left: auto;
-        margin-bottom: auto;
-        padding-bottom: auto;
-        margin-right: auto;
-        padding-right: auto;
+        flex-direction: colum;
+        margin: 10px;
+        padding-right: 10px;
     }
     .header{
         margin-bottom: 25px;
@@ -378,3 +371,4 @@ textarea:hover, textarea:active{
     transform: scale(1.3);
     background-color: #FEE715;
 }
+
